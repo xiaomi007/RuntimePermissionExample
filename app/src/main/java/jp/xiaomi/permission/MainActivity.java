@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
                 ActivityCompat.requestPermissions(this, new String[]{permission.ACCESS_FINE_LOCATION}, NOT_FIRST_TIME);
             } else {
                 //first time or always denied
-                Log.d(TAG, "first time of always denied");
+                Log.d(TAG, "first time or always denied");
                 ActivityCompat.requestPermissions(this, new String[]{permission.ACCESS_FINE_LOCATION}, FIRST_TIME);
             }
         }
